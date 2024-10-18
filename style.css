@@ -1,0 +1,473 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Common Styles */
+
+* {
+    /* margin: 0 auto; */
+    font-family: "Mulish", sans-serif;
+    box-sizing: border-box;
+}
+
+/*  :not(.footer) */
+/* body {
+    max-width: 1170px;
+    margin: 0 auto;
+} */
+.nav,
+.header,
+.popular-tour-section,
+.tour-destination-section,
+.service-section,
+.package-section,
+.newsletter-section {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.primary-color {
+    color: rgb(255, 84, 0);
+}
+
+.primary-btn {
+    background-color: rgb(255, 84, 0);
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-size: 1rem;
+    width: 175px;
+}
+
+.section-heading {
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+}
+
+.section-description {
+    color: rgba(19, 19, 24, 0.7);
+    padding: 25px;
+    margin: 0;
+    text-align: center;
+}
+
+/* nav section styles */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .nav-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav .nav-img h1 {
+    color: rgb(19, 19, 24);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.nav .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: rgb(66, 66, 71);
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.nav .nav-menu a {
+    text-decoration: none;
+}
+
+.responsive-menu {
+    display: none;
+}
+
+/* Header Section Styles */
+
+.header {
+    height: 500px;
+    border-radius: 15px;
+    background-image: url('banner.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 30px;
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.header p {
+    color: rgb(255, 255, 255);
+}
+
+.header-input-part {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    width: 800px;
+    margin: 40px auto;
+    padding-bottom: 7px;
+}
+
+.header-input-part input {
+    width: 175px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    color: rgba(19, 19, 24, 0.5);
+}
+
+/* Popular Section Styles */
+.popular-tour-section {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.popular-tour-section .popular-tour-content {
+    margin-top: 10px;
+}
+
+.popular-tour-section .popular-tour-content>ul>li {
+    margin-top: 10px;
+}
+
+/* Tour Destination Section Styles */
+.tour-destination-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* .tour-destination-section h2 {
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.tour-destination-section p {
+    color: rgba(19, 19, 24, 0.7);
+    padding: 25px;
+    margin: 0;
+} */
+
+.destination-img {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-template-rows: repeat(3, 1fr);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.destination-img>div>img {
+    width: 100%;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.img-6,
+.img-7 {
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-1 {
+    background-image: url('destination1.png');
+    grid-row: 1;
+    grid-column: 1/span 13;
+    width: 90%;
+}
+
+.img-2 {
+    background-image: url('destination2.png');
+    grid-row: 1;
+    grid-column: 13/span 25;
+}
+
+.img-3 {
+    background-image: url('destination3.png');
+    /* background-size: cover; */
+    grid-row: 2;
+    grid-column: 1/span 8;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.img-4 {
+    background-image: url('destination4.png');
+    grid-row: 2;
+    grid-column: 9/span 19;
+    margin-top: 10px;
+    width: 65%;
+}
+
+.img-5 {
+    background-image: url('destination5.png');
+    grid-row: 2;
+    grid-column: 19/span 25;
+    margin-top: 10px;
+}
+
+.img-6 {
+    background-image: url('destination6.png');
+    grid-row: 3;
+    grid-column: 1/span 10;
+}
+
+.img-7 {
+    background-image: url('destination7.png');
+    grid-row: 3;
+    grid-column: 11/span 25;
+}
+
+/* .img-1 {
+    background-image: url('../images/Rectangle\ 5.png');
+    grid-row: 1;
+    grid-column: 1/span 7;
+    width: 90%;
+}
+
+.img-2 {
+    background-image: url('../images/Rectangle\ 8.png');
+    grid-row: 1;
+    grid-column: 7/span 13;
+}
+
+.img-3 {
+    background-image: url('../images/Rectangle\ 6.png');
+    grid-row: 2;
+    grid-column: 1/span 5;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.img-4 {
+    background-image: url('../images/Rectangle\ 7.png');
+    grid-row: 2;
+    grid-column: 5/span 10;
+    margin-top: 10px;
+    width: 70%;
+}
+
+.img-5 {
+    background-image: url('../images/Rectangle\ 9.png');
+    grid-row: 2;
+    grid-column: 10/span 13;
+    margin-top: 10px;
+}
+
+.img-6 {
+    background-image: url('../images/Rectangle\ 11.png');
+    grid-row: 3;
+    grid-column: 1/span 5;
+}
+
+.img-7 {
+    background-image: url('../images/Rectangle\ 10.png');
+    grid-row: 3;
+    grid-column: 6/span 19;
+} */
+
+
+/* Service Section Styles */
+
+.service-section {
+    margin-top: 100px;
+}
+
+.service-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.service-container>div {
+    width: 573px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.service-container1 {
+    background-color: rgba(251, 181, 99, 0.2);
+}
+
+.service-container2 {
+    background-color: rgba(41, 206, 246, 0.2);
+}
+
+.service-container3 {
+    background-color: rgba(251, 181, 99, 0.2);
+    margin: 0 auto;
+}
+
+.service-icon {
+    font-size: 65px;
+    color: rgb(255, 84, 0);
+}
+
+.service-container>div>h2 {
+    color: rgb(19, 19, 24);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.service-container>div>p {
+    color: rgb(90, 90, 93);
+}
+
+/* Packages Section Styles */
+.package-section {
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.package-section .card {
+    background-color: rgba(41, 206, 246, 0.2);
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.package-section img {
+    width: 100%;
+    height: 200px;
+}
+
+.package-detail {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.package-detail h2 {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.package-detail h5 {
+    margin: 0;
+}
+
+.package-detail .price-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.package-detail #card1,
+#card3 {
+    padding-top: 30px;
+}
+
+.package-detail .price-area h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* News Letter Section Styles */
+.newsletter-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.newsletter-text {
+    width: 474px;
+    height: 422px;
+    padding: 40px;
+}
+
+.newsletter-form {
+    display: block;
+}
+
+.newsletter-form input,
+button {
+    width: 393px;
+    padding: 20px;
+    background-color: rgba(19, 19, 24, 0.05);
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+}
+
+.newsletter-img {
+    position: relative;
+}
+
+.save-70-percent {
+    width: 324px;
+    height: 120px;
+    background-color: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 80px;
+    left: 340px;
+    transform: rotate(-30deg);
+}
+
+.save-70-percent p {
+    padding-top: 20px;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.save-70-percent h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* Footer Styles */
+
+.footer {
+    background-color: rgba(19, 19, 24, 0.05);
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    height: 502px;
+}
+
+.footer-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 10px;
+}
+
+.footer-icon .fa-brands {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+hr {
+    margin: 20px 100px;
+}
